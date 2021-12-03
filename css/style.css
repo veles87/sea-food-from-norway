@@ -14,6 +14,8 @@ body{
     font-weight: 400;
     font-size: 16px;
     line-height: 118%;
+
+     color: #232222;
     
 }
 
@@ -153,7 +155,7 @@ body{
 }
 
 .header__content-link--active{
-
+    border-bottom: 1px solid #FFFFFF;
     font-weight: 700;
     
 
@@ -236,4 +238,158 @@ body{
     line-height: 120%;
 
     color: #FFFFFF;
+}
+
+/* MAIN*/
+
+.product {
+    padding-top: 100px;
+}
+
+
+
+.product__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__name {
+    width: 510px;
+
+    text-align: center;
+    padding-top: 41px;
+}
+
+.up-crab{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.up-crab,
+.down-crab{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+.product__name-item {
+
+    font-family: 'Roboto Slab',
+    serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 137%;
+
+    cursor: pointer;
+
+}
+
+.product__name-item.slick-current {
+    font-family: 'Roboto Slab',
+    serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 138%;
+
+    /* фирменный синий */
+
+    color: #001E64;
+}
+
+.product__name-item+.product__name-item  {
+    margin-top: 20px;
+}
+
+
+
+.prodact__content {
+    width: 600px;
+}
+
+.prodact__content-items {}
+
+.prodact__content-box {
+    display: flex;
+    justify-content: space-between;
+}
+
+.prodact__content-img {
+    object-fit: cover;
+
+}
+
+.prodact__content-list {
+    width: 291px;
+    list-style: none;
+
+}
+
+.prodact__content-item {
+    margin-bottom: 30px;
+}
+
+.prodact__content-item span{
+    display: block;
+    margin-bottom: 10px;
+    color: #001E64;
+}
+
+.prodact__content-title {
+    font-family: 'Roboto Slab',
+    serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 133%;
+  
+
+    color: #001E64;
+
+    margin-bottom: 20px;
+
+    padding-top: 20px;
+}
+
+.prodact__content-text {
+    margin-bottom: 25px;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 120%;
+    /* or 19px */
+
+
+    /* черный */
+
+    color: #232222;
+
+}
+
+.prodact__content-btn {
+    display: inline-block;
+
+    font-family: 'Roboto Slab',
+    serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 133%;
+
+    color: #001E64;
+
+    padding: 12px 85px;
+
+    border: 1px solid #001E64;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: transparent;
+
+    cursor: pointer;
+}
+.prodact__content-btn:hover{
+    border-color: #0e49d3;
 }
