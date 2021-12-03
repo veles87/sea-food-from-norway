@@ -393,3 +393,50 @@ body{
 .prodact__content-btn:hover{
     border-color: #0e49d3;
 }
+
+/* SEAFOOD  benefits*/
+
+.seafood {
+    background-image: url(../images/benefits/Group\ 24.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  top center;
+    padding: 290px 0 95px;
+}
+
+
+.seafood__item { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+
+.seafood__items {
+        font-family: 'Roboto Slab',serif;
+    
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 133%;
+
+        color: #FFFFFF;
+
+        display: flex;
+        justify-content: space-around;
+
+        width: 180px;
+        min-height: 165px;
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-image: url(../images/shell/shell-01.svg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    
+}
+.seafood__items:not(:last-child){
+    margin-right: 100px;
+}
