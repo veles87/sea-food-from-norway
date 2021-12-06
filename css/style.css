@@ -135,8 +135,14 @@ body{
     position: absolute;
 
     transform: translateY(-100px);
+   
 
 
+}
+.header__btn:hover{
+    background-color: #fff;
+    color: #001E64;
+     transition: all .6s;
 }
 
 .header__content-box {
@@ -394,7 +400,9 @@ body{
     cursor: pointer;
 }
 .prodact__content-btn:hover{
-    border-color: #0e49d3;
+    background-color: #001E64;
+    color: #FFFFFF;
+    transition: all .6s;
 }
 
 /* SEAFOOD  benefits*/
@@ -577,7 +585,7 @@ blockquote p::after {
 /* footer */
 
 .footer {
-     padding: 25px 0 110px ; 
+    padding: 25px 0 110px ; 
 }
 
 .footer__inner {
@@ -585,7 +593,6 @@ blockquote p::after {
     justify-content: space-around;
     align-items: flex-end;
     padding: 0 45px 0 23px;
-   
     margin-right: auto;
 
 }
@@ -612,7 +619,7 @@ blockquote p::after {
     fill: #001E64;
 }
 
-.footer__menu {
-
+.footer-social__link path{
+    transition: all 0.6s;
 }
 
