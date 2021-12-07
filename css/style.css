@@ -655,13 +655,18 @@ blockquote p::after {
 
 /* media */
 
+@media (max-width: 1160px){
+    .product__name {
+        width: 350px;
+    }
+}
 
 @media (max-width: 998px){
 .menu__list {
     position: absolute;
     top: -360px;
-    left: 20%;
-    right: 20%;
+    left: 60%;
+    right: 5%;
     display: block;
     background-color: #73c1f8ee;
     z-index: 2;
@@ -699,6 +704,55 @@ blockquote p::after {
 .phone{
     margin-right: 0;
 }
+.product__name {
+    width: 250px;
+}
+
+}
+
+@media (max-width: 890px){
+    .product__inner{
+        display: block;
+    }
+    .prodact__content{
+        margin: 0 auto;
+    }
+    .product__name{
+        width: 100%;
+        padding-top: 0;
+        margin-bottom: 80px;
+    }
+    .product__name-item + .product__name-item{
+        margin-top: 0;
+    }
+    .product__name-item.slick-current {
+        font-family: 'Roboto Slab', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 95%;
+        color: #001E64;
+    }
+    .product__name .slick-dots{
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: center;
+        
+
+    }
+    .product__name .slick-dots button{
+        margin: 0 5px;
+        width: 10px;
+        height: 10px;
+        font-size: 0;
+        padding: 0;
+        border-radius: 50%;
+        background-color: #c4c4c4;
+    }
+    .product__name .slick-active button{
+        background-color: #001E64;
+    }
 }
 
 @media (max-width: 793px){
@@ -790,6 +844,7 @@ blockquote p::after {
         margin-left: 0;
     }
 }
+
 @media (max-width: 360px){
     .header__content-title {
         padding-top: 125px;
@@ -801,5 +856,16 @@ blockquote p::after {
     }
     .logo{
         margin-left: 0;
+    }
+   
+    .menu__list{
+        left: 10%;
+        right: 10%;
+    }
+    .header-slider{
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 135px;
+        
     }
 }
