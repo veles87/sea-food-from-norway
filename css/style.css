@@ -448,9 +448,8 @@ body{
 
 .seafood__item { 
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    justify-content: space-around;
+    
     }
 
 .seafood__items {
@@ -707,6 +706,9 @@ blockquote p::after {
 .product__name {
     width: 250px;
 }
+.seafood__items:not(:last-child){
+    margin-right: 0;
+}
 
 }
 
@@ -815,8 +817,59 @@ blockquote p::after {
             .logo{
                 margin-left: 0;
             }
+            .seafood{
+               
+                    padding: 180px 0 28px;
+            } 
+            .seafood__item {
+                display: flex;
+                justify-content: space-around;
+                flex-wrap: wrap;
+            }
+
     }
-@media (max-width: 470px){
+  
+
+@media (max-width: 650px){
+    .prodact__content{
+        width: 100%;
+    }
+     .seafood {
+
+         padding: 165px 0 40px;
+     }
+    /* .prodact__content-list {
+        padding-left: 25px;
+    } */
+}  
+@media (max-width: 600px){
+        .prodact__content-box {
+            display: block;
+        }
+        .prodact__content-list{
+            width: 100%;
+            padding-top: 25px;
+            padding-left: 25px;
+        }
+        .slick-slide img{
+            margin-left: 25px;
+        }
+        .prodact__content-title{
+           padding-left: 25px;
+        }
+        .prodact__content-text{
+            padding: 0 25px;
+        }
+        .prodact__content-btn{
+            margin-left: 22px;
+            padding: 10px 50px;
+        }
+         .product {
+             padding-top: 75px;
+         }
+}  
+@media
+ (max-width: 470px){
     .header-slider{
         padding-left: 50px;
         padding-top: 28px;
@@ -843,6 +896,19 @@ blockquote p::after {
     .logo{
         margin-left: 0;
     }
+    .product{
+        padding-top: 50px;
+    }
+    .seafood__item{
+        
+        margin: 0 auto;
+       ;
+    }
+    .seafood {
+        display: block;
+        padding: 300px 0 80px;
+    }
+
 }
 
 @media (max-width: 360px){
@@ -868,4 +934,15 @@ blockquote p::after {
         padding-bottom: 135px;
         
     }
+     .product {
+         padding-top: 25px;
+     }
+        .seafood__item {
+
+            margin: 0 auto;
+            ;
+        }
+
+
+
 }
